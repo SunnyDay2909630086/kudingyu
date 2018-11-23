@@ -1,0 +1,17 @@
+<view>
+  <!-- 头像 -->
+  <view class='avatar'>
+    <image src="/images/头像 男孩.png"></image>
+    <text>kuku</text>
+  </view> 
+  <!-- 会员过期时间 -->
+  <view class="expiresDate">
+    <settings settings="{{expiresDate}}"/>
+  </view>
+  <!-- 其它设置项目 -->
+  <view class='otherSettings'>
+    <block wx:for="{{settings}}" wx:key="{{item.title}}">
+      <settings bind:goToSettingsPage="goToSettingsPage" settings="{{item}}" />
+    </block>
+  </view>
+</view>

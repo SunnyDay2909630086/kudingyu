@@ -1,0 +1,22 @@
+.avatar{
+  width: 100%;
+  height: 400rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.avatar image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.avatar text{
+  margin-top: 20rpx;
+}
+.expiresDate{
+  margin-top: 20rpx;
+}
+.otherSettings{
+  margin-top: 20rpx;
+}

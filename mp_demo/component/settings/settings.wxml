@@ -1,0 +1,14 @@
+<wxs src="../../utils/filter.wxs" module="filter"></wxs>
+<!--component/settings/settings.wxml-->
+<view class='settings' data-navigate-to="{{settings.navigateTo}}" bindtap='clickSettings'>
+  <text class='title'>{{settings.title}}</text>
+  <block wx:if="{{settings.type==='date'}}">
+    <text class='date'>{{filter.formatTime(settings.date,'YYYY-MM-DD HH:mm')}}      </text>
+  </block>
+  <block wx:elif="{{settings.type==='arrow'}}">
+    <image class='arrow' src='/images/列表箭头.png'></image>
+  </block>
+  <block wx:elif="{{settings.type==='switch'}}">
+    <switch checked/>
+  </block>
+</view>

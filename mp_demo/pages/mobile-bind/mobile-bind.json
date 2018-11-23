@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"手机绑定",
+  "usingComponents":{
+    "my-input":"/component/my-input/my-input"
+  }
+}

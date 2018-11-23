@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "settings": "/component/settings/settings"
+  },
+  "navigationBarTitleText": "我的"
+}
